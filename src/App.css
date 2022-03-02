@@ -1,38 +1,261 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+li{
+  display: inline-block;
+  text-decoration: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  color: darkgrey;
+}
+
+a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:active {
+  text-decoration: underline;
+text-decoration-color: rgba(2,0,36,1);
+text-decoration-thickness: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar {
+  z-index: 2;
+  display: inline-block;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,9,121,1) 68%, rgba(0,212,255,1) 100%);  position: fixed;
+  width: 100%;
+  height:50px;
+  color: darkgrey;
+  border-bottom: 4px solid rgba(2,0,36,1) ;
+  display: inline-flexbox;
+
+}
+
+h1 {
+  font-size: 70px;
+/* text-decoration: underline; */
+/* text-decoration-color: rgb(5, 1, 80); */
+/* text-decoration-thickness: 5px; */
+
+}
+
+#landing {
+  display: grid;
+  padding-top: 20em;
+
+}
+
+.divs {
+  padding-top: 8em;
+  padding-bottom: 3em;
+}
+/* body {
+  text-align: center;
+  position: fixed;
+} */
+
+h1,h3{
+  text-align: center;
+  z-index: 0;
+  margin: auto;
+  color: #63707e;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+  /* color: white; */
+}
+
+
+/* img{
+  max-width: 50px;
+  max-height: 50px;
+} */
+
+.card {
+  max-height: 65vh;
+  max-width: 20vw;
+  background-color: rgba(55, 67, 68, 0.014);
+  border: 2px solid rgba(0,212,255,1);
+  margin-right: 15px;
+  min-height: 68vh;
+  margin-top: 2em;
+}
+
+.description {
+  color: #63707e;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.title {
+  text-decoration: underline;
+text-decoration-color: rgb(4, 1, 73);
+text-decoration-thickness: 5px;
+}
+
+.title:hover {
+  color: rgba(0,212,255,1);
+}
+
+.btn-primary {
+  width: 10vw;
+  background-color:rgba(0,212,255,1) ;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.btn-primary:hover {
+  background-color: black;
+}
+
+img{
+  height: 15vw;
+  width: 100%;
+  object-fit: cover;
+  size: cover;
+}
+
+#btndiv {
+display: grid;
+margin-top: 1em;
+}
+
+button{
+  margin: auto;
+  height: 8vh;
+  width: 11vw;
+ border:2px solid rgb(18, 9, 192) ;
+ background-color: rgba(0,212,255,1);
+ color: white;
+}
+
+body {
+  background-color: white;
+  font-family: 'Bebas Neue', cursive;
+/* background: url(../src/assets/background.jpeg); */
+/* background-repeat:no-repeat ; */
+/* background-position: center; */
+/* background-size: 100%; */
+
+}
+/* body {
+  background-image: url('./components/assets/photo-1531297484001-80022131f5a1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 99%;
+  background-color: black;
+  box-shadow: 0 0 5px 2px #282a2d;
+} */
+
+#about {
+  font-size: 25px;
+  word-wrap:break-all;
+  text-align: center;
+  color: #63707e;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 4em;
+}
+
+#aboutdiv{
+  margin-top: 10em;
+  /* text-decoration: underline; */
+  /* text-decoration-color: rgb(5, 1, 71); */
+  text-decoration-thickness: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #63707e;
+}
+
+h4{
+  display: inline-block;
+  margin: 1.2em;
+}
+
+p {
+  color: #63707e;
+}
+
+form {
+  display: inline-block;
+  /* text-align: center; */
+  height: 30vh;
+  width: 50vh;
+  border: 5px solid white;
+  background-color: rgba(86, 102, 105, 0.014);
+  margin: auto;
+  padding: 20px;
+  max-height: 60vh;
+  min-height: 50vh;
+  /* background-color: rgb(18, 9, 192) ;  */
+}
+
+input, textarea {
+  display: block;
+  /* align-self: center; */
+  /* align-content: center; */
+  align-items: center;
+  width: 75%;
+  justify-content: center;
+  margin: auto;
+}
+
+.formdiv{
+  height: auto;
+  width: 25vw;
+  margin: auto;
+  margin-top: 5em;
+}
+
+input {
+  margin-bottom: 2em;
+  border: 1px solid black;
+  height: 5vh;
+  margin-top: 2em;
+}
+
+.submitbtn {
+  margin-top: 3em;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: rgba(0,212,255,1)
+}
+
+.formheader {
+  background-color: rgba(0,212,255,1);
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: lightblue;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+#quote {
+  top: 25%;
+  margin-bottom: 10em;
+  color: blue;
+}
+
+#rightquote {
+  margin-top: 6em;
+  color: blue;
 }
