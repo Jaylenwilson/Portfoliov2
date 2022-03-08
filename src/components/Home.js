@@ -9,7 +9,7 @@ function Home() {
     const saveFile = () => {
         SaveAs(
             FileSaver.saveAs(
-                "https://1drv.ms/b/s!ArRnGIyQvW_DgQIdM4aO6hzmbFb5", "JaylenWilsonResume.pdf"
+                "https://1drv.ms/w/s!ArRnGIyQvW_DflkCHqGoqmGgklo", "JaylenWilsonResume.pdf"
             )
         )
     }
