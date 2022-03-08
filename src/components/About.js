@@ -13,6 +13,7 @@ function About() {
                 <FontAwesomeIcon id="quote" icon={faQuoteLeft} size="2x" />
                 <p id="about">  I am an aspiring Full Stack Web Developer and EFA graduate. For about 6 months before EFA I spent mt time self learning web development although I was able to learn a nice a,ount I realized I needed some structure to get going. I was recommended by a friend to try EFA so I did, below are some links to help you learn better of who I am as a web developer   </p>
                 <FontAwesomeIcon id="rightquote" icon={faQuoteRight} size="2x" />
+                <p>hello</p>
             </div>
 
 
