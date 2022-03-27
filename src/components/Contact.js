@@ -35,7 +35,7 @@ function ContactForm() {
                 field="email"
                 errors={state.errors}
             />
-            <textarea
+            <input
                 id="message"
                 name="message"
                 placeholder="message"
@@ -45,9 +45,11 @@ function ContactForm() {
                 field="message"
                 errors={state.errors}
             />
-            <button className="submitbtn" type="submit" disabled={state.submitting}>
-                Submit
+            <div className="btndiv">
+                <button className="submitbtn" type="submit" disabled={state.submitting}>
+                    Submit
       </button>
+            </div>
         </form>
     );
 }
@@ -56,7 +58,7 @@ function Contact() {
     return (
         <div className="divs">
             <h1>Contact Me</h1>
-            <div className="formdiv">
+            <div >
                 <ContactForm />
             </div>
         </div>

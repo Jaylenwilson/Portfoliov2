@@ -12,7 +12,7 @@ function Project() {
         <div className="divs">
             <h1>Projects</h1>
 
-            <Container>
+            <Container className="col-md-3">
                 <Row>
                     <Col>
                         <Card>
@@ -85,6 +85,7 @@ function Project() {
 
                 </Row>
             </Container>
+
         </div>
     )
 }

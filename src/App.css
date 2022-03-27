@@ -50,6 +50,10 @@ h1 {
 .divs {
   padding-top: 8em;
   padding-bottom: 3em;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* body {
   text-align: center;
@@ -76,14 +80,16 @@ h3 {
 } */
 
 .card {
-  max-height: 65vh;
-  max-width: 20vw;
+  max-height: 100%;
+  max-width: 35vw;
   background-color: rgba(55, 67, 68, 0.014);
   border: 2px solid rgba(0,212,255,1);
   margin-right: 15px;
   min-height: 68vh;
   margin-top: 2em;
 }
+
+
 
 .description {
   color: #63707e;
@@ -188,7 +194,7 @@ p {
 form {
   display: inline-block;
   /* text-align: center; */
-  height: 30vh;
+  height: 100%;
   width: 50vh;
   border: 5px solid white;
   background-color: rgba(86, 102, 105, 0.014);
@@ -214,6 +220,7 @@ input, textarea {
   width: 25vw;
   margin: auto;
   margin-top: 5em;
+  border: 2px solid black
 }
 
 input {
@@ -224,8 +231,7 @@ input {
 }
 
 .submitbtn {
-  margin-top: 3em;
-  position: relative;
+   /* margin-top: -3em; */
   width: 100px;
   height: 50px;
   background-color: rgba(0,212,255,1)
@@ -258,4 +264,10 @@ footer {
 #rightquote {
   margin-top: 6em;
   color: blue;
+}
+
+.btndiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
